@@ -22,7 +22,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    transaction[quantity].times {self.items.pop}
+    transaction[2].times {self.items.pop}
     self.total -= transaction[1] * transaction[2]
   end
 end
