@@ -10,7 +10,7 @@ class CashRegister
 
   def add_item(name, amount, quantity = 1)
     self.total += amount * quantity
-    self.items << name * quantity
+    quantity.times {self.items << name}
   end
 
   def apply_discount
